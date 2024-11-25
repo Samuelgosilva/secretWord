@@ -36,7 +36,7 @@ score,
       <div className="wordContainer">
         {letters.map((letter, i) => (
           guessedLetters.includes(letter) ? (
-            <span key={i} className="blankSquare">
+            <span key={i} className="letter">
               {letter}
             </span>
           ) : (
