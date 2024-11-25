@@ -115,7 +115,7 @@ function App() {
   const retry =() => {
     setScore(0)
     setGuesses(guessesQty)
-    
+
     setGameStage(stages[0].name)
   }
 
@@ -132,7 +132,7 @@ function App() {
       guesses={guesses}
       score={score}
       />}
-      {gameStage === 'end' && <GameOver retry={retry}/>}
+      {gameStage === 'end' && <GameOver retry={retry} score={score}/>}
 
     </div>
   )
